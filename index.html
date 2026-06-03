@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐒𝐈𝐑 | 𝐘𝐎𝐔𝐒𝐄𝐅 ✅</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #ffcc00; --blue-ver: #1da1f2; --bg-card: rgba(0, 0, 0, 0.85); }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #000; color: #fff; overflow-x: hidden; }
+        .v-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: brightness(0.4); }
+        .logo { text-align: center; font-size: 2.2rem; margin: 30px 0; color: var(--gold); text-shadow: 0 0 20px var(--gold); font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .container { max-width: 600px; margin: auto; padding: 20px; padding-bottom: 120px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .btn-main { background: var(--bg-card); border: 2px solid #333; padding: 20px; border-radius: 15px; color: #fff; cursor: pointer; text-align: center; font-weight: bold; transition: 0.3s; backdrop-filter: blur(10px); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+        .btn-main:hover { border-color: var(--gold); box-shadow: 0 0 15px var(--gold); transform: translateY(-3px); }
+        .section { display: none; animation: slideUp 0.4s ease forwards; }
+        @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        .item-card { background: var(--bg-card); border: 1px solid var(--gold); border-radius: 15px; padding: 15px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; }
+        .counter { display: flex; align-items: center; background: #111; border-radius: 10px; border: 1px solid var(--gold); overflow: hidden; }
+        .counter button { background: var(--gold); border: none; width: 35px; height: 35px; cursor: pointer; font-size: 1.2rem; font-weight: bold; color: #000; }
+        .counter span { width: 40px; text-align: center; font-weight: bold; }
+        .footer-bar { position: fixed; bottom: 0; width: 100%; padding: 20px 0; text-align: center; z-index: 100; background: linear-gradient(transparent, #000); }
+        .total-box { background: var(--gold); color: #000; padding: 15px 40px; border-radius: 50px; font-weight: bold; font-size: 1.3rem; display: inline-block; cursor: pointer; box-shadow: 0 0 25px var(--gold); }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 200; justify-content: center; align-items: center; }
+        .modal-content { background: #111; border: 2px solid var(--gold); padding: 30px; border-radius: 20px; text-align: center; width: 85%; max-width: 400px; }
+        .copy-box { background: #222; padding: 15px; margin: 15px 0; border: 1px dashed var(--gold); font-size: 1.4rem; color: var(--gold); font-weight: bold; cursor: pointer; }
+        .btn-next { background: #25d366; color: white; border: none; padding: 12px 25px; border-radius: 10px; font-weight: bold; cursor: pointer; margin-top: 10px; width: 100%; }
+    </style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline class="v-bg">
+    <source src="https://v1.pexels.com/video-files/3129957/3129957-uhd_2560_1440_30fps.mp4" type="video/mp4">
+</video>
+
+<div class="logo">𝐒𝐈𝐑 | 𝐘𝐎𝐔𝐒𝐄𝐅 <i class="fas fa-check-circle" style="color:var(--blue-ver)"></i></div>
+
+<div class="container">
+    <div id="main-menu" class="grid">
+        <div class="btn-main" onclick="showSec('pubg-sec')">شحن ببجي 🎮</div>
+        <div class="btn-main" onclick="showSec('tele-sec')">رشق تليجرام 👤</div>
+        <div class="btn-main" onclick="showSec('canva-sec')">CANVA PRO 🎨</div>
+        <div class="btn-main" onclick="showSec('ff-sec')">شحن فري فاير 🔥</div>
+        <div class="btn-main" onclick="contact('tele')" style="border-color:#0088cc; color:#0088cc;">تليجرام للدعم ✈️</div>
+        <div class="btn-main" onclick="contact('wa')" style="border-color:#25d366; color:#25d366;">واتساب للدعم 🟢</div>
+    </div>
+
+    <div id="pubg-sec" class="section">
+        <button onclick="goBack()" style="color:var(--gold); background:none; border:none; cursor:pointer; margin-bottom:15px;">⬅ رجوع</button>
+        
+        <button class="btn-main" onclick="toggleIzdehar()" style="width:100%; margin-bottom:15px; border-color:var(--gold);">الازدهارات ✨ (اضغط للإظهار)</button>
+        
+        <div id="izdehar-list" style="display:none; flex-direction:column; gap:10px;">
+            <div class="item-card">
+                <div class="item-info"><h3>ازدهار أول</h3><p>45 ج.م</p></div>
+                <div class="counter"><button onclick="updateIzdehar('iz1', -1, 45, 'ازدهار أول')">-</button><span id="iz1">0</span><button onclick="updateIzdehar('iz1', 1, 45, 'ازدهار أول')">+</button></div>
+            </div>
+            <div class="item-card">
+                <div class="item-info"><h3>ازدهار ثاني</h3><p>130 ج.م</p></div>
+                <div class="counter"><button onclick="updateIzdehar('iz2', -1, 130, 'ازدهار ثاني')">-</button><span id="iz2">0</span><button onclick="updateIzdehar('iz2', 1, 130, 'ازدهار ثاني')">+</button></div>
+            </div>
+            <div class="item-card">
+                <div class="item-info"><h3>ازدهار ثالث</h3><p>230 ج.م</p></div>
+                <div class="counter"><button onclick="updateIzdehar('iz3', -1, 230, 'ازدهار ثالث')">-</button><span id="iz3">0</span><button onclick="updateIzdehar('iz3', 1, 230, 'ازدهار ثالث')">+</button></div>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="item-info"><h3>60 شدة 🎮</h3><p>45 ج.م</p></div>
+            <div class="counter"><button onclick="updateQty('p1',-1,45,'60 شدة')">-</button><span id="p1">0</span><button onclick="updateQty('p1',1,45,'60 شدة')">+</button></div>
+        </div>
+        <div class="item-card">
+            <div class="item-info"><h3>325 شدة 🎮</h3><p>220 ج.م</p></div>
+            <div class="counter"><button onclick="updateQty('p2',-1,220,'325 شدة')">-</button><span id="p2">0</span><button onclick="updateQty('p2',1,220,'325 شدة')">+</button></div>
+        </div>
+        <div class="item-card">
+            <div class="item-info"><h3>660 شدة 🎮</h3><p>440 ج.م</p></div>
+            <div class="counter"><button onclick="updateQty('p3',-1,440,'660 شدة')">-</button><span id="p3">0</span><button onclick="updateQty('p3',1,440,'660 شدة')">+</button></div>
+        </div>
+    </div>
+
+    <div id="tele-sec" class="section">
+        <button onclick="goBack()" style="color:var(--gold); background:none; border:none; cursor:pointer; margin-bottom:15px;">⬅ رجوع</button>
+        <div class="item-card">
+            <div class="item-info"><h3>1000 عضو 👤</h3><p>60 ج.م</p></div>
+            <div class="counter"><button onclick="updateQty('t1',-1,60,'1000 عضو')">-</button><span id="t1">0</span><button onclick="updateQty('t1',1,60,'1000 عضو')">+</button></div>
+        </div>
+    </div>
+
+    <div id="ff-sec" class="section">
+        <button onclick="goBack()" style="color:var(--gold); background:none; border:none; cursor:pointer; margin-bottom:15px;">⬅ رجوع</button>
+        <div class="item-card">
+            <div class="item-info"><h3>110 جوهرة 💎</h3><p>75 ج.م</p></div>
+            <div class="counter"><button onclick="updateQty('f1',-1,75,'110 جوهرة')">-</button><span id="f1">0</span><button onclick="updateQty('f1',1,75,'110 جوهرة')">+</button></div>
+        </div>
+    </div>
+
+    <div id="canva-sec" class="section">
+        <button onclick="goBack()" style="color:var(--gold); background:none; border:none; cursor:pointer; margin-bottom:15px;">⬅ رجوع</button>
+        <div class="item-card">
+            <div class="item-info"><h3>كانفا برو 🎨</h3><p>50 ج.م</p></div>
+            <div class="counter"><button onclick="updateQty('c1',-1,50,'كانفا برو')">-</button><span id="c1">0</span><button onclick="updateQty('c1',1,50,'كانفا برو')">+</button></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-bar"><div class="total-box" onclick="openModal()">شراء الآن | <span id="final-price">0</span> ج.م</div></div>
+
+<div id="paymentModal" class="modal">
+    <div class="modal-content" id="step1">
+        <h3>تأكيد الطلب 🧾</h3>
+        <p>حول <span id="modal-total" style="color:var(--gold)">0</span> ج.م فودافون كاش:</p>
+        <div class="copy-box" onclick="copyNum()">01069921074</div>
+        <button class="btn-next" onclick="nextStep()">تم التحويل ✅</button>
+        <button onclick="closeModal()" style="background:none; border:none; color:#777; margin-top:10px;">إلغاء</button>
+    </div>
+    <div class="modal-content" id="step2" style="display:none;">
+        <h3>إرسال الإسكرين 📸</h3>
+        <button class="btn-next" onclick="sendToTelegram()">تأكيد عبر تليجرام ✈️</button>
+    </div>
+</div>
+
+<script>
+    let total = 0; let items = {}; let izIds = ['iz1', 'iz2', 'iz3'];
+
+    function showSec(id) { document.getElementById('main-menu').style.display = 'none'; document.getElementById(id).style.display = 'block'; }
+    function goBack() { document.getElementById('main-menu').style.display = 'grid'; document.querySelectorAll('.section').forEach(s => s.style.display = 'none'); }
+    function toggleIzdehar() { let l = document.getElementById('izdehar-list'); l.style.display = (l.style.display === 'none') ? 'flex' : 'none'; }
+
+    function updateQty(id, ch, pr, name) {
+        let el = document.getElementById(id); let val = parseInt(el.innerText) + ch;
+        if (val >= 0) { el.innerText = val; total += (ch * pr); items[name] = val; if(val===0) delete items[name]; }
+        document.getElementById('final-price').innerText = total;
+    }
+
+    function updateIzdehar(id, ch, pr, name) {
+        if (ch > 0) { 
+            izIds.forEach(i => {
+                let currentVal = parseInt(document.getElementById(i).innerText);
+                if (currentVal > 0) {
+                    let currentPr = (i === 'iz1' ? 45 : i === 'iz2' ? 130 : 230);
+                    let currentName = (i === 'iz1' ? 'ازدهار أول' : i === 'iz2' ? 'ازدهار ثاني' : 'ازدهار ثالث');
+                    total -= (currentVal * currentPr);
+                    delete items[currentName];
+                    document.getElementById(i).innerText = 0;
+                }
+            });
+        }
+        updateQty(id, ch, pr, name);
+    }
+
+    function contact(t) { window.open(t === 'tele' ? "https://t.me/HX_H2" : "https://wa.me/201069921074"); }
+    function openModal() { if(total<=0) return; document.getElementById('modal-total').innerText = total; document.getElementById('paymentModal').style.display = 'flex'; }
+    function closeModal() { document.getElementById('paymentModal').style.display = 'none'; }
+    function copyNum() { navigator.clipboard.writeText("01069921074"); alert("تم نسخ الرقم!"); }
+    function nextStep() { document.getElementById('step1').style.display='none'; document.getElementById('step2').style.display='block'; }
+    function sendToTelegram() { 
+        let msg = "تم تحويل " + total + " ج.م لطلب:\n"; 
+        for(let k in items) msg += "- " + k + " (العدد: " + items[k] + ")\n";
+        window.open("https://t.me/HX_H2?text=" + encodeURIComponent(msg));
+    }
+</script>
+</body>
+</html>
